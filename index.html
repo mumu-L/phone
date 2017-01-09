@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phone</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <style>
+        .container{
+            margin-top:4%;
+            width:300px;
+            height:500px;
+            background-image: url(bg.jpeg);
+        }
+        .mobile-logo{
+            font-family: fantasy;
+            font-size: 12px;
+            padding-left: 5px;
+        }
+        .phone-time{
+            text-align: center;
+            font-size: 40px;
+            margin-top:50px;
+        }
+        .phone-date{
+            text-align: center;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .phone-call{
+            text-align: center;
+            font-size: 13px;
+            font-weight: 700;
+            
+        }
+        .in-row{
+            margin-top:36%;
+        }
+        .in-password{
+            width:100%;
+            height:30px;
+            background-color:transparent;
+            border:1px solid #ddd;
+            outline: none;
+            border-radius: 8px;
+            color:beige;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .key-row{
+            height:10%;
+        }
+        .key-col{
+            padding: 0px auto;
+            height:50px;
+            background-color: darkgrey;
+            border: 1px solid #eee;
+            line-height: 50px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            color:black;
+            opacity: 0.3;
+        }
+        .key-col:hover{
+          background-color: #ccc;  
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <div class="col-xs-4 mobile-logo">中国移动 4G</div>
+           <div class="col-xs-5"></div>
+           <div class="col-xs-3">
+               <span class="glyphicon glyphicon-sort"></span>
+               <span class="glyphicon glyphicon-signal"></span>
+           </div>
+       </div>
+       <div class="row">
+           <div class="clo-xs-12 phone-time">14:20</div>
+       </div>
+       <div class="row">
+           <div class="clo-xs-12 phone-date">12月15日周四</div>
+       </div>
+       <div class="row">
+           <div class="clo-xs-12 phone-call">紧急呼叫</div>
+       </div>
+       <div class="row in-row">
+           <div class="col-xs-12 in-col">
+               <input type="password" id="test1" class="in-password">
+           </div>
+       </div>
+       <div class="row key-row">
+           <div class="col-xs-4 key-col" id="btn1">1</div>
+           <div class="col-xs-4 key-col" id="btn2">2</div>
+           <div class="col-xs-4 key-col" id="btn3">3</div>
+       </div>
+       <div class="row key-row">
+           <div class="col-xs-4 key-col" id="btn4">4</div>
+           <div class="col-xs-4 key-col" id="btn5">5</div>
+           <div class="col-xs-4 key-col" id="btn6">6</div>
+       </div>
+       <div class="row key-row">
+           <div class="col-xs-4 key-col" id="btn7">7</div>
+           <div class="col-xs-4 key-col" id="btn8">8</div>
+           <div class="col-xs-4 key-col" id="btn9">9</div>
+       </div>
+       <div class="row key-row">
+           <div class="col-xs-4 key-col"></div>
+           <div class="col-xs-4 key-col" id="btn0">0</div>
+           <div class="col-xs-4 key-col" id="btn-l"><span class="glyphicon glyphicon-remove"></span></div>
+       </div>
+   </div> 
+</body>
+<script>
+$("#btn1").click(function(){
+    $("#test1").val(function(i,o){
+        return o+$("#btn1").text();
+    });
+});
+
+$("#btn2").click(function(){
+    $("#test1").val(function(i,o){
+        return o+$("#btn2").text();
+    });
+});
+    
+$("#btn3").click(function(){
+    $("#test1").val(function(i,o){
+        return o+$("#btn3").text();
+    });
+});
+    
+$("#btn4").click(function(){
+    $("#test1").val(function(i,o){
+        return o+$("#btn4").text();
+    });
+});
+    
+$("#btn5").click(function(){
+    $("#test1").val(function(i,o){
+        return o+$("#btn5").text();
+    });
+});
+    
+$("#btn6").click(function(){
+    $("#test1").val(function(i,o){
+        return o+$("#btn6").text();
+    });
+});
+    
+$("#btn7").click(function(){
+    $("#test1").val(function(i,o){
+        return o+$("#btn7").text();
+    });
+});
+
+$("#btn8").click(function(){
+    $("#test1").val(function(i,o){
+        return o+$("#btn8").text();
+    });
+});
+    
+$("#btn9").click(function(){
+    $("#test1").val(function(i,o){
+        return o+$("#btn9").text();
+    });
+});
+    
+$("#btn0").click(function(){
+    $("#test1").val(function(i,o){
+        return o+$("#btn0").text();
+    });
+});
+    
+$("#btn-l").click(function(){
+    $("#test1").val("");
+});
+</script>
+</html>
